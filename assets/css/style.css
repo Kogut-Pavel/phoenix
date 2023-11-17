@@ -451,6 +451,11 @@ nav ul li {
     text-transform: uppercase;
 }
 
+nav.nav-footer {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
 nav.nav-footer ul {
     font-family: 'Roboto', sans-serif;
     -ms-flex-align: start;
@@ -705,6 +710,7 @@ nav.nav-footer ul {
 
 .footer__col {
     max-width: 28.5rem;
+    width: 100%;
 }
 
 .footer__col.first {
@@ -1550,7 +1556,7 @@ nav.nav-footer ul {
     line-height: 116%;
 }
 
-.form input {
+.form input, .form textarea {
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 116%;
@@ -1563,24 +1569,40 @@ nav.nav-footer ul {
     border-bottom: 1px solid #fff;
 }
 
-.form input::-webkit-input-placeholder {
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
     color: #e1e1e1;
 }
 
-.form input:-ms-input-placeholder {
+.form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
     color: #e1e1e1;
 }
 
-.form input::-ms-input-placeholder {
+.form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
     color: #e1e1e1;
 }
 
-.form input::placeholder {
+.form input::placeholder, .form textarea::placeholder {
     color: #e1e1e1;
 }
 
-.form input[type='email'] {
+.form input[type='email'], .form textarea[type='email'] {
     margin-bottom: 3.9rem;
+}
+
+.form textarea {
+    height: 8rem;
+    resize: none;
+}
+
+.form textarea::-webkit-scrollbar {
+    border-radius: 8px;
+    background: #fff;
+    width: .8rem;
+}
+
+.form textarea::-webkit-scrollbar-thumb {
+    background: #363636;
+    border-radius: 8px;
 }
 
 .form__checkbox {
@@ -1718,7 +1740,8 @@ nav.nav-footer ul {
         margin-bottom: 2rem;
     }
 
-    .services__undertitle p, .services__undertitle a {
+    .services__undertitle p,
+    .services__undertitle a {
         font-size: 1.5rem;
     }
 
@@ -1791,13 +1814,25 @@ nav.nav-footer ul {
     }
 
     .reviews__item {
-        max-width: calc(25% - .75rem);
+        max-width: calc(25% - 0.75rem);
     }
 
     .reviews__item h3 {
         margin-bottom: 0;
         height: 6rem;
         padding-bottom: 1rem;
+    }
+
+    .contacts::after {
+        content: unset;
+    }
+
+    .contacts__alwaysintouch {
+        font-size: 8rem;
+    }
+
+    .footer__contacts {
+        font-size: 1.4rem;
     }
 }
 
@@ -1852,6 +1887,26 @@ nav.nav-footer ul {
 
     .reviews__item h3 {
         height: 4.8rem;
+    }
+
+    .contacts__alwaysintouch {
+        font-size: 7rem;
+    }
+
+    .form p {
+        font-size: 1.6rem;
+    }
+
+    .form input[type='email'] {
+        margin-bottom: 2.5rem;
+    }
+
+    .form__checkbox {
+        margin: 2rem 0;
+    }
+
+    .footer .footer-form .footer__block input {
+        font-size: 1.4rem;
     }
 }
 
@@ -2096,7 +2151,8 @@ nav.nav-footer ul {
         gap: 1rem;
     }
 
-    .services__undertitle p, .services__undertitle a {
+    .services__undertitle p,
+    .services__undertitle a {
         font-size: 1.4rem;
         max-width: unset;
         width: auto;
@@ -2186,7 +2242,8 @@ nav.nav-footer ul {
         margin-bottom: 3rem;
     }
 
-    .aboutus__block, .aboutus img {
+    .aboutus__block,
+  .aboutus img {
         max-width: 100%;
     }
 
@@ -2197,8 +2254,13 @@ nav.nav-footer ul {
     }
 
     .aboutus ul li {
-        max-width: calc(50% - .5rem);
+        max-width: calc(50% - 0.5rem);
         height: 15rem;
+    }
+
+    .aboutus ul li:hover {
+        -webkit-transform: unset;
+        transform: unset;
     }
 
     .reviews__inner {
@@ -2206,11 +2268,73 @@ nav.nav-footer ul {
     }
 
     .reviews__item {
-        max-width: calc(50% - .5rem);
+        max-width: calc(50% - 0.5rem);
     }
 
     .reviews__item h3 {
         font-size: 1.4rem;
+    }
+
+    .contacts__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .contacts__inner .media {
+        top: 0;
+        right: 0;
+        bottom: unset;
+        left: unset;
+    }
+
+    .contacts__block,
+  .contacts form {
+        max-width: 100%;
+    }
+
+    .contacts__block p,
+    .contacts form p {
+        width: 90%;
+    }
+
+    .contacts__alwaysintouch {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .contacts__contacts {
+        font-size: 1.6rem;
+    }
+
+    .footer__inner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .footer__col {
+        max-width: calc(50% - 1rem);
+    }
+
+    .footer__col:first-child, .footer__col:last-child {
+        padding-top: 0;
+    }
+
+    .footer__col.first {
+        gap: 2rem;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .footer__col.logo {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .footer .media {
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -2227,6 +2351,33 @@ nav.nav-footer ul {
     }
 
     .projects__texts p:first-child, .projects__texts p:last-child {
+        max-width: 100%;
+    }
+
+    .contacts__inner .media {
+        display: none;
+    }
+
+    .contacts__inner form p {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contacts__inner form input,
+  .contacts__inner form textarea {
+        font-size: 1.4rem;
+    }
+
+    .footer__inner {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer__col {
+        max-width: 100%;
+    }
+
+    .footer__col.logo {
         max-width: 100%;
     }
 }
@@ -2320,7 +2471,8 @@ nav.nav-footer ul {
         gap: 1rem;
     }
 
-    .services__undertitle p, .services__undertitle a {
+    .services__undertitle p,
+    .services__undertitle a {
         max-width: unset;
         width: 100%;
         max-width: 100%;
@@ -2338,8 +2490,8 @@ nav.nav-footer ul {
     }
 
     .services__list-button {
-        top: .8rem;
-        right: .2rem;
+        top: 0.8rem;
+        right: 0.2rem;
     }
 
     .services__list-button span {
@@ -2400,5 +2552,45 @@ nav.nav-footer ul {
     .reviews__item h3 {
         height: unset;
         font-size: 1.6rem;
+    }
+
+    .contacts h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .contacts__inner {
+        gap: 1rem;
+    }
+
+    .form {
+        padding-top: 0;
+    }
+
+    .form p {
+        font-size: 1.4rem;
+    }
+
+    .form input[type='email'] {
+        margin-bottom: 2rem;
+    }
+
+    .form__checkbox {
+        margin: 1.5rem 0;
+    }
+
+    .form__checkbox label {
+        font-size: 1.2rem;
+    }
+
+    .form button {
+        padding: 1.5rem;
+    }
+
+    nav.nav-footer ul {
+        gap: 1.2rem;
+    }
+
+    .footer .media {
+        margin: 2rem 0;
     }
 }
