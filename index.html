@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Inter:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Noto+Serif&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700;900&family=Rubik&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Phoenix - создание сайтов</title>
+</head>
+<body class="body">
+
+    <!-- Header -->
+    <header class="header">
+    
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="../assets/images/mini-logo.svg" alt="#">
+                    <div class="header__logo-text">
+                        <div class="header__logo-title">Phoenix</div>
+                        <div class="header__logo-subtitle">WEB Studio</div>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label class="burger" for="burger-checkbox"></label>
+                    <ul class="menu-list">
+                        <li><a href="#services" class="menu-item">Услуги</a></li>
+                        <li><a href="#projects" class="menu-item">наши проекты</a></li>
+                        <li><a href="#aboutus" class="menu-item">О студии</a></li>
+                        <li><a href="#reviews" class="menu-item">отзывы</a></li>
+                        <li><a href="#contacts" class="menu-item">Контакты</a></li>
+                        <div class="header__contacts header__contacts-mobile">
+                            <a href="tel:+79372115115">+7 (937) 211-51-15</a>
+                            <a href="mailto:phoenix.kadkin@gmail.com">phoenix.kadkin@gmail.com</a>
+                        </div>
+                    </ul>
+                    
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+79372115115">+7 (937) 211-51-15</a>
+                    <a href="mailto:phoenix.kadkin@gmail.com">phoenix.kadkin@gmail.com</a>
+                </div>
+                
+    
+                <!-- <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#projects">наши проекты</a></li>
+                        <li><a href="#aboutus">О студии</a></li>
+                        <li><a href="#reviews">отзывы</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav> -->
+            </div>
+        </div>
+     
+        
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="title title_h1">
+                        создание<br />
+                        сайтов
+                    </h1>
+                    <div class="hero__subtitle">
+                        Сайты<br />
+                        любой сложности
+                    </div>
+                    <a href="#contacts" class="hero__button button">Оставить заявку</a>
+                    <div class="hero__promotion">
+                        <div class="hero__text">
+                            <span class="text-gradient">Скидка 5%</span><br />
+                            при оформлении заявки
+                        </div>
+                        <div class="hero__timer">
+                            <div class="hero__timer-text">до окончания акции</div>
+                            <div class="timer">
+                                <div class="timer__block">
+                                    <span id="hours">20</span>
+                                    <div class="timer__colon">:</div>
+                                </div>
+                                <div class="timer__block">
+                                    <span id="minutes">56</span>
+                                    <div class="timer__colon">:</div>
+                                </div>
+                                <div class="timer__block">
+                                    <span id="seconds">48</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__biglogo">
+                        <div class="hero__biglogo-inner">
+                            <img src="assets/images/big-logo.svg" alt="#" />
+                            <span>Phoenix</span>
+                        </div>
+                    </div>
+                    <ul class="media">
+                        <li class="vk">
+                            <a href="#"
+                                ><svg
+                                    width="29"
+                                    height="18"
+                                    viewBox="0 0 29 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.1061 1.51205C28.3189 0.830891 28.1061 0.335722 27.1645 0.335722H24.0337C23.244 0.335722 22.8793 0.769297 22.6665 1.23307C22.6665 1.23307 21.0559 5.19442 18.8069 7.76265C18.0775 8.50541 17.7434 8.75299 17.3482 8.75299C17.1354 8.75299 16.8616 8.50541 16.8616 7.82485V1.48005C16.8616 0.675698 16.6188 0.304321 15.9499 0.304321H11.0262C10.5395 0.304321 10.2358 0.675698 10.2358 1.04708C10.2358 1.82063 11.3604 2.00662 11.4817 4.17268V8.8792C11.4817 9.90034 11.3024 10.0869 10.9042 10.0869C9.84068 10.0869 7.25747 6.09478 5.7079 1.54587C5.4066 0.644901 5.10051 0.304321 4.31018 0.304321H1.14947C0.237786 0.304321 0.0859375 0.737292 0.0859375 1.20166C0.0859375 2.03741 1.14947 6.24575 5.03953 11.8158C7.62274 15.6201 11.3 17.6648 14.6125 17.6648C16.6188 17.6648 16.8616 17.2005 16.8616 16.4269V13.5489C16.8616 12.6207 17.0439 12.4662 17.6824 12.4662C18.1379 12.4662 18.9587 12.7131 20.8126 14.5392C22.9397 16.7053 23.3043 17.6956 24.4898 17.6956H27.6201C28.5317 17.6956 28.9574 17.2313 28.7141 16.3339C28.4409 15.4366 27.4072 14.1371 26.0699 12.5899C25.3405 11.724 24.2465 10.7645 23.9123 10.3001C23.4568 9.68113 23.5781 9.43355 23.9123 8.87679C23.8818 8.87679 27.7115 3.36833 28.1061 1.50964"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="tg">
+                            <a href="#"
+                                ><svg
+                                    width="26"
+                                    height="21"
+                                    viewBox="0 0 26 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M22.7092 0.803452C23.0207 0.6823 23.3616 0.640515 23.6965 0.682447C24.0314 0.724379 24.348 0.848494 24.6134 1.04187C24.8787 1.23525 25.0832 1.49083 25.2054 1.782C25.3276 2.07317 25.3631 2.38929 25.3083 2.69746L22.4496 18.7219C22.1723 20.2677 20.3371 21.1541 18.8031 20.3841C17.52 19.74 15.6142 18.7476 13.9 17.712C13.0429 17.1937 10.4174 15.5338 10.7401 14.3527C11.0174 13.3428 15.4289 9.54779 17.9498 7.29152C18.9393 6.40509 18.488 5.89373 17.3196 6.70911C14.4168 8.73357 9.75946 11.8122 8.2192 12.6788C6.86044 13.443 6.15207 13.5734 5.30506 13.443C3.75976 13.2053 2.32663 12.8373 1.15694 12.3888C-0.42365 11.7831 -0.346763 9.77493 1.15568 9.19019L22.7092 0.803452Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="wa">
+                            <a href="#"
+                                ><svg
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.336312 21.6666L1.77844 16.3674C0.828192 14.7384 0.328948 12.8858 0.332046 10.9999C0.332046 5.10872 5.10751 0.333252 10.9987 0.333252C16.8899 0.333252 21.6654 5.10872 21.6654 10.9999C21.6654 16.8911 16.8899 21.6666 10.9987 21.6666C9.11367 21.6696 7.26181 21.1708 5.63337 20.2212L0.336312 21.6666ZM7.14911 5.99511C7.01136 6.00367 6.87676 6.03995 6.75337 6.10178C6.63766 6.16731 6.53204 6.24922 6.43977 6.34498C6.31177 6.46551 6.23924 6.57005 6.16137 6.67138C5.76715 7.18444 5.55509 7.81423 5.55871 8.46125C5.56084 8.98391 5.69737 9.49271 5.91071 9.96844C6.34697 10.9306 7.06484 11.9492 8.01311 12.8932C8.24137 13.1204 8.46431 13.3487 8.70431 13.561C9.88125 14.5972 11.2838 15.3445 12.8003 15.7434L13.4072 15.8362C13.6046 15.8468 13.8019 15.8319 14.0003 15.8223C14.311 15.8063 14.6143 15.7222 14.8888 15.5759C15.0285 15.504 15.1648 15.4257 15.2974 15.3412C15.2974 15.3412 15.3432 15.3114 15.4307 15.2452C15.5747 15.1386 15.6632 15.0628 15.7827 14.938C15.8712 14.8463 15.948 14.7386 16.0067 14.6159C16.0899 14.442 16.1731 14.1103 16.2072 13.834C16.2328 13.6228 16.2254 13.5076 16.2222 13.4362C16.2179 13.322 16.123 13.2036 16.0195 13.1535L15.3987 12.8751C15.3987 12.8751 14.4707 12.4708 13.9043 12.2127C13.8446 12.1867 13.7806 12.1719 13.7155 12.169C13.6425 12.1615 13.5688 12.1697 13.4992 12.1931C13.4297 12.2164 13.366 12.2544 13.3123 12.3044V12.3023C13.307 12.3023 13.2355 12.3631 12.4643 13.2975C12.42 13.357 12.3591 13.4019 12.2892 13.4266C12.2193 13.4513 12.1436 13.4547 12.0718 13.4362C12.0023 13.4176 11.9342 13.3941 11.868 13.3658C11.7358 13.3103 11.6899 13.289 11.5992 13.2495L11.5939 13.2474C10.9837 12.9809 10.4187 12.6211 9.91924 12.1807C9.78484 12.0634 9.66004 11.9354 9.53204 11.8116C9.11239 11.4098 8.74667 10.9551 8.44404 10.4591L8.38111 10.3578C8.3359 10.2897 8.29936 10.2162 8.27231 10.1391C8.23177 9.98231 8.33737 9.85645 8.33737 9.85645C8.33737 9.85645 8.59657 9.57271 8.71711 9.41911C8.81747 9.29146 8.91111 9.15865 8.99764 9.02125C9.12351 8.81858 9.16297 8.61058 9.09684 8.44951C8.79817 7.71991 8.48884 6.99351 8.17097 6.27245C8.10804 6.12951 7.92137 6.02711 7.75177 6.00685C7.69417 6.00045 7.63657 5.99405 7.57897 5.98978C7.43573 5.98266 7.29218 5.98409 7.14911 5.99405V5.99511Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="advantages">
+            <h2 class="title d-none">Наши преимущества</h2>
+            <div class="container">
+                <div class="advantages__row row1">
+                    <span class="advantages__item">Аналитика</span>
+                    <img src="assets//images/decor/adv1.jpg" alt="#" />
+                    <p>
+                        анализ даных вашего<br />
+                        продукта и его пользователей
+                    </p>
+                </div>
+                <div class="advantages__row row2">
+                    <img src="assets//images/decor/adv2.jpg" alt="#" />
+                    <span class="advantages__item">Дизайн и Разработка</span>
+                </div>
+                <div class="advantages__row row3">
+                    <p>
+                        мы тщательно продумываем<br />
+                        структуру, дизайн и контент
+                    </p>
+                    <span class="advantages__item">Продвижение</span>
+                    <p>
+                        проектирование,<br />
+                        разработка адаптивов. оптимизация. Интеграция.
+                    </p>
+                </div>
+                <div class="advantages__row row4">
+                    <img src="assets//images/decor/adv3.jpg" alt="#" />
+                    <p>
+                        обеспечение посещаемости<br />
+                        сайта
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="title title_h2">Услуги</h2>
+                <div class="services__undertitle">
+                    <p>
+                        С удовольствием берёмся за интересные
+                        проекты и дорабатываем идеи вместе
+                    </p>
+                </div>
+                <ol class="services__list">
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>01</span>
+                            <h3 class="title title_h3">Прототипирование</h3>
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>02</span>
+                            <h3 class="title title_h3">веб - дизайн</h3>
+                            
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>03</span>
+                            <h3 class="title title_h3">HTML/CSS/JS-разработка</h3>
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>04</span>
+                            <h3 class="title title_h3">“посадка” на CMS</h3>
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>05</span>
+                            <h3 class="title title_h3">настройка</h3>
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services__list-header" data-name="accordeon-title">
+                            <span>06</span>
+                            <h3 class="title title_h3">Продвижение, сопровождение</h3>
+                            <div class="services__list-button">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="services__list-info hidden">
+                            <p>Создание визуального образа и общей концепции. Проработка деталей в дизайне. Разработка адаптивов и составление UI-kit для подготовки дизайна к верстке</p>
+                            <div class="services__list-price">От 7 000 руб.</div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        
+        <section class="cta">
+            <div class="container">
+                <h2 class="title title_h2">будем рады вашим идеям!</h2>
+                <a href="#contacts" class="button">Обсудить проект</a>
+            </div>
+        </section>
+        
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="projects__header">
+                    <h2 class="title title_h2">наши проекты</h2>
+                </div>
+                <div class="projects__texts">
+                    <p>Каждый проект, созданный нами -  набор продуманных функциональных и эстетических решений, которые мы создаем для Вас и Ваших пользователей.</p>
+                    <p>Ваш сайт станет эффективным инструментом увеличения продаж!</p>
+                </div>
+                <div class="projects__inner carousel">
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания техно-спектр</h3>
+                        <p>Сайт по противопожарной безопасности</p>
+                    </div>
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания czementart</h3>
+                        <p>Декоративное покрытие микроцемента и микробетона</p>
+                    </div>
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания неотек</h3>
+                        <p>Продажа строительной химии</p>
+                    </div>
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания техно-спектр</h3>
+                        <p>Сайт по противопожарной безопасности</p>
+                    </div>
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания czementart</h3>
+                        <p>Декоративное покрытие микроцемента и микробетона</p>
+                    </div>
+                    <div class="projects__item">
+                        <img src="assets/images/projects/czement.jpg" alt="#">
+                        <h3 class="title title_h3">Компания неотек</h3>
+                        <p>Продажа строительной химии</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="aboutus" id="aboutus">
+            <div class="container">
+                <h2 class="title title_h2">О нас</h2>
+                <div class="aboutus__inner">
+                    <div class="aboutus__block">
+                        <p>Мы занимаемся разработкой, созданием продающих сайтов и продвижением. Наша команда обладает всеми необходимыми профессиональными навыками. Мы разрабатываем и внедряем любые интернет-решения.</p>
+                        <p>Наше главное преимущество — наши специалисты и подход к клиенту. Наша компания решает любые бизнес-задачи клиентов, связанных с цифровыми устройствами, повышаем результативность и раскрываем  потенциал бизнеса.</p>
+                        <a href="#contacts" class="button">Обсудить проект</a>
+                    </div>
+                    <img src="assets/images/decor/aboutus.jpg" alt="#">
+                </div>
+                <ul>
+                    <li>
+                        <h3 class="title title_h3">«Под ключ»</h3>
+                        <p>Полный цикл веб-разработки от собеседования по проекту до полной реализации</p>
+                    </li>
+                    <li>
+                        <h3 class="title title_h3">договор</h3>
+                        <p>Мы заключаем договор по желанию, чтобы обезопасить и стороны</p>
+                    </li>
+                    <li>
+                        <h3 class="title title_h3">сроки</h3>
+                        <p>Мы выполняем работу точно с оговоренный срок и предлагаем выгодные цены</p>
+                    </li>
+                    <li>
+                        <h3 class="title title_h3">нет офиса</h3>
+                        <p>Мы не платим за аренду офиса, что делает наши цены ниже на 10-15%</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="title title_h2">Отзывы</h2>
+                <div class="reviews__inner">
+                    <div class="reviews__item">
+                        <h3 class="title title_h3">директор компании 
+                            ООО спектр</h3>
+                        <img src="assets/images/reviews/review-1.jpg" alt="#">
+                        <div class="reviews__name">Иванов александр</div>
+                        <p class="reviews__text">Вы профессионалы. При первой встрече я рассказал об идее проекта, а вы помогли доработать и реализовать его во что-то особое и прекрасное. Спасибо Вам огромное!</p>
+                    </div>
+                    <div class="reviews__item">
+                        <h3 class="title title_h3">Менеджер проектов в компании ООО маяк</h3>
+                        <img src="assets/images/reviews/review-2.jpg" alt="#">
+                        <div class="reviews__name">ирина барина</div>
+                        <p class="reviews__text">Заказывала интернет-магазин цветов. Все сделали в срок и вышло очень хорошо, клиенты говорят, что пользоваться сайтом - одно удовольствие</p>
+                    </div>
+                    <div class="reviews__item">
+                        <h3 class="title title_h3">директор компании
+                            ооо сибирь</h3>
+                        <img src="assets/images/reviews/review-3.jpg" alt="#">
+                        <div class="reviews__name">олег карЫба</div>
+                        <p class="reviews__text">Их работа соответствует качеству и заявленному уровню. Рекомендую к сотрудничеству, получите рабочий продукт. Профессионалы своего дела! Спасибо Вам огромное!</p>
+                    </div>
+                    <div class="reviews__item">
+                        <h3 class="title title_h3">директор компании
+                            Czementart</h3>
+                        <img src="assets/images/reviews/review-4.jpg" alt="#">
+                        <div class="reviews__name">Алексей иванов</div>
+                        <p class="reviews__text">Делали сайт для нашей компании. Понравилось ВСЁ! Четко, без воды. Слушают твои пожелания. Сделали оперативно и в срок. Работой остались очень довольны.</p>
+                    </div>
+                </div>
+                <a href="#contacts" class="button">Обсудить проект</a>
+            </div>
+        </section>
+         
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="title title_h2">Контакты</h2>
+                <div class="contacts__inner">
+                    <div class="contacts__block">
+                        <div class="contacts__alwaysintouch">Всегда на связи</div>
+                        <div class="contacts__contacts">
+                            <a href="tel:+79372115115">+7 (937) 211-51-15</a>
+                            <a href="mailto:phoenix.kadkin@gmail.com">phoenix.kadkin@gmail.com</a>
+                        </div>
+                        <ul class="media">
+                            <li class="vk">
+                                <a href="#"
+                                    ><svg
+                                        width="29"
+                                        height="18"
+                                        viewBox="0 0 29 18"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M28.1061 1.51205C28.3189 0.830891 28.1061 0.335722 27.1645 0.335722H24.0337C23.244 0.335722 22.8793 0.769297 22.6665 1.23307C22.6665 1.23307 21.0559 5.19442 18.8069 7.76265C18.0775 8.50541 17.7434 8.75299 17.3482 8.75299C17.1354 8.75299 16.8616 8.50541 16.8616 7.82485V1.48005C16.8616 0.675698 16.6188 0.304321 15.9499 0.304321H11.0262C10.5395 0.304321 10.2358 0.675698 10.2358 1.04708C10.2358 1.82063 11.3604 2.00662 11.4817 4.17268V8.8792C11.4817 9.90034 11.3024 10.0869 10.9042 10.0869C9.84068 10.0869 7.25747 6.09478 5.7079 1.54587C5.4066 0.644901 5.10051 0.304321 4.31018 0.304321H1.14947C0.237786 0.304321 0.0859375 0.737292 0.0859375 1.20166C0.0859375 2.03741 1.14947 6.24575 5.03953 11.8158C7.62274 15.6201 11.3 17.6648 14.6125 17.6648C16.6188 17.6648 16.8616 17.2005 16.8616 16.4269V13.5489C16.8616 12.6207 17.0439 12.4662 17.6824 12.4662C18.1379 12.4662 18.9587 12.7131 20.8126 14.5392C22.9397 16.7053 23.3043 17.6956 24.4898 17.6956H27.6201C28.5317 17.6956 28.9574 17.2313 28.7141 16.3339C28.4409 15.4366 27.4072 14.1371 26.0699 12.5899C25.3405 11.724 24.2465 10.7645 23.9123 10.3001C23.4568 9.68113 23.5781 9.43355 23.9123 8.87679C23.8818 8.87679 27.7115 3.36833 28.1061 1.50964"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="tg">
+                                <a href="#"
+                                    ><svg
+                                        width="26"
+                                        height="21"
+                                        viewBox="0 0 26 21"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M22.7092 0.803452C23.0207 0.6823 23.3616 0.640515 23.6965 0.682447C24.0314 0.724379 24.348 0.848494 24.6134 1.04187C24.8787 1.23525 25.0832 1.49083 25.2054 1.782C25.3276 2.07317 25.3631 2.38929 25.3083 2.69746L22.4496 18.7219C22.1723 20.2677 20.3371 21.1541 18.8031 20.3841C17.52 19.74 15.6142 18.7476 13.9 17.712C13.0429 17.1937 10.4174 15.5338 10.7401 14.3527C11.0174 13.3428 15.4289 9.54779 17.9498 7.29152C18.9393 6.40509 18.488 5.89373 17.3196 6.70911C14.4168 8.73357 9.75946 11.8122 8.2192 12.6788C6.86044 13.443 6.15207 13.5734 5.30506 13.443C3.75976 13.2053 2.32663 12.8373 1.15694 12.3888C-0.42365 11.7831 -0.346763 9.77493 1.15568 9.19019L22.7092 0.803452Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="wa">
+                                <a href="#"
+                                    ><svg
+                                        width="22"
+                                        height="22"
+                                        viewBox="0 0 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M0.336312 21.6666L1.77844 16.3674C0.828192 14.7384 0.328948 12.8858 0.332046 10.9999C0.332046 5.10872 5.10751 0.333252 10.9987 0.333252C16.8899 0.333252 21.6654 5.10872 21.6654 10.9999C21.6654 16.8911 16.8899 21.6666 10.9987 21.6666C9.11367 21.6696 7.26181 21.1708 5.63337 20.2212L0.336312 21.6666ZM7.14911 5.99511C7.01136 6.00367 6.87676 6.03995 6.75337 6.10178C6.63766 6.16731 6.53204 6.24922 6.43977 6.34498C6.31177 6.46551 6.23924 6.57005 6.16137 6.67138C5.76715 7.18444 5.55509 7.81423 5.55871 8.46125C5.56084 8.98391 5.69737 9.49271 5.91071 9.96844C6.34697 10.9306 7.06484 11.9492 8.01311 12.8932C8.24137 13.1204 8.46431 13.3487 8.70431 13.561C9.88125 14.5972 11.2838 15.3445 12.8003 15.7434L13.4072 15.8362C13.6046 15.8468 13.8019 15.8319 14.0003 15.8223C14.311 15.8063 14.6143 15.7222 14.8888 15.5759C15.0285 15.504 15.1648 15.4257 15.2974 15.3412C15.2974 15.3412 15.3432 15.3114 15.4307 15.2452C15.5747 15.1386 15.6632 15.0628 15.7827 14.938C15.8712 14.8463 15.948 14.7386 16.0067 14.6159C16.0899 14.442 16.1731 14.1103 16.2072 13.834C16.2328 13.6228 16.2254 13.5076 16.2222 13.4362C16.2179 13.322 16.123 13.2036 16.0195 13.1535L15.3987 12.8751C15.3987 12.8751 14.4707 12.4708 13.9043 12.2127C13.8446 12.1867 13.7806 12.1719 13.7155 12.169C13.6425 12.1615 13.5688 12.1697 13.4992 12.1931C13.4297 12.2164 13.366 12.2544 13.3123 12.3044V12.3023C13.307 12.3023 13.2355 12.3631 12.4643 13.2975C12.42 13.357 12.3591 13.4019 12.2892 13.4266C12.2193 13.4513 12.1436 13.4547 12.0718 13.4362C12.0023 13.4176 11.9342 13.3941 11.868 13.3658C11.7358 13.3103 11.6899 13.289 11.5992 13.2495L11.5939 13.2474C10.9837 12.9809 10.4187 12.6211 9.91924 12.1807C9.78484 12.0634 9.66004 11.9354 9.53204 11.8116C9.11239 11.4098 8.74667 10.9551 8.44404 10.4591L8.38111 10.3578C8.3359 10.2897 8.29936 10.2162 8.27231 10.1391C8.23177 9.98231 8.33737 9.85645 8.33737 9.85645C8.33737 9.85645 8.59657 9.57271 8.71711 9.41911C8.81747 9.29146 8.91111 9.15865 8.99764 9.02125C9.12351 8.81858 9.16297 8.61058 9.09684 8.44951C8.79817 7.71991 8.48884 6.99351 8.17097 6.27245C8.10804 6.12951 7.92137 6.02711 7.75177 6.00685C7.69417 6.00045 7.63657 5.99405 7.57897 5.98978C7.43573 5.98266 7.29218 5.98409 7.14911 5.99405V5.99511Z"
+                                            fill="white"
+                                        />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="#" class="form">
+                        <p>Оставьте заявку и мы свяжемся с Вами в ближайшее время, проконсультируем и ответим на все имеющиеся опросы.</p>
+                        <input type="text" name="name" placeholder="ФИО" required>
+                        <input type="email" name="email" placeholder="EMAIL" required>
+                        <textarea name="question" placeholder="Ваш вопрос" required></textarea>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="agree" required>
+                            <label for="agree">Оставляя свой Телефон, я принимаю политику конфедициальности</label>
+                        </div>
+                        <button class="button">Отправить</button>
+                    </form>
+                </div>
+        
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col first">
+                    <div class="footer__schedule">
+                        <span>График работы</span>
+                        <p>ПН-ПТ с 9.00 до 18.00<br>
+                            сб-вс выходные</p>
+                        <p>Звонки и обращения принимаются в рабочее время</p>
+                    </div>
+                    <div class="footer__social-media">
+                        <span>Мы в соцсетях</span>
+                        <a href="#">VK</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="mailto:phoenix.kadkin@gmail.com">phoenix.kadkin@gmail.com</a>
+                        <a href="tel:+79372115115">+7 (937) 211-51-15</a>
+                    </div>
+                    <a href="#" class="footer__politics">Политика конфединциальности</a>
+                </div>
+                <div class="footer__col logo">
+                    <img src="../assets/images/big-logo.svg" alt="#">
+                    <div class="name">PHOENIX</div>
+                    <div class="subname">WEB Studio</div>
+                </div>
+                <div class="footer__col">
+                    <nav class="nav-footer">
+                        <ul>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#projects">наши проекты</a></li>
+                            <li><a href="#aboutus">О студии</a></li>
+                            <li><a href="#reviews">отзывы</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="media">
+                        <li class="vk">
+                            <a href="#"
+                                ><svg
+                                    width="29"
+                                    height="18"
+                                    viewBox="0 0 29 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M28.1061 1.51205C28.3189 0.830891 28.1061 0.335722 27.1645 0.335722H24.0337C23.244 0.335722 22.8793 0.769297 22.6665 1.23307C22.6665 1.23307 21.0559 5.19442 18.8069 7.76265C18.0775 8.50541 17.7434 8.75299 17.3482 8.75299C17.1354 8.75299 16.8616 8.50541 16.8616 7.82485V1.48005C16.8616 0.675698 16.6188 0.304321 15.9499 0.304321H11.0262C10.5395 0.304321 10.2358 0.675698 10.2358 1.04708C10.2358 1.82063 11.3604 2.00662 11.4817 4.17268V8.8792C11.4817 9.90034 11.3024 10.0869 10.9042 10.0869C9.84068 10.0869 7.25747 6.09478 5.7079 1.54587C5.4066 0.644901 5.10051 0.304321 4.31018 0.304321H1.14947C0.237786 0.304321 0.0859375 0.737292 0.0859375 1.20166C0.0859375 2.03741 1.14947 6.24575 5.03953 11.8158C7.62274 15.6201 11.3 17.6648 14.6125 17.6648C16.6188 17.6648 16.8616 17.2005 16.8616 16.4269V13.5489C16.8616 12.6207 17.0439 12.4662 17.6824 12.4662C18.1379 12.4662 18.9587 12.7131 20.8126 14.5392C22.9397 16.7053 23.3043 17.6956 24.4898 17.6956H27.6201C28.5317 17.6956 28.9574 17.2313 28.7141 16.3339C28.4409 15.4366 27.4072 14.1371 26.0699 12.5899C25.3405 11.724 24.2465 10.7645 23.9123 10.3001C23.4568 9.68113 23.5781 9.43355 23.9123 8.87679C23.8818 8.87679 27.7115 3.36833 28.1061 1.50964"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="tg">
+                            <a href="#"
+                                ><svg
+                                    width="26"
+                                    height="21"
+                                    viewBox="0 0 26 21"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M22.7092 0.803452C23.0207 0.6823 23.3616 0.640515 23.6965 0.682447C24.0314 0.724379 24.348 0.848494 24.6134 1.04187C24.8787 1.23525 25.0832 1.49083 25.2054 1.782C25.3276 2.07317 25.3631 2.38929 25.3083 2.69746L22.4496 18.7219C22.1723 20.2677 20.3371 21.1541 18.8031 20.3841C17.52 19.74 15.6142 18.7476 13.9 17.712C13.0429 17.1937 10.4174 15.5338 10.7401 14.3527C11.0174 13.3428 15.4289 9.54779 17.9498 7.29152C18.9393 6.40509 18.488 5.89373 17.3196 6.70911C14.4168 8.73357 9.75946 11.8122 8.2192 12.6788C6.86044 13.443 6.15207 13.5734 5.30506 13.443C3.75976 13.2053 2.32663 12.8373 1.15694 12.3888C-0.42365 11.7831 -0.346763 9.77493 1.15568 9.19019L22.7092 0.803452Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="wa">
+                            <a href="#"
+                                ><svg
+                                    width="22"
+                                    height="22"
+                                    viewBox="0 0 22 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M0.336312 21.6666L1.77844 16.3674C0.828192 14.7384 0.328948 12.8858 0.332046 10.9999C0.332046 5.10872 5.10751 0.333252 10.9987 0.333252C16.8899 0.333252 21.6654 5.10872 21.6654 10.9999C21.6654 16.8911 16.8899 21.6666 10.9987 21.6666C9.11367 21.6696 7.26181 21.1708 5.63337 20.2212L0.336312 21.6666ZM7.14911 5.99511C7.01136 6.00367 6.87676 6.03995 6.75337 6.10178C6.63766 6.16731 6.53204 6.24922 6.43977 6.34498C6.31177 6.46551 6.23924 6.57005 6.16137 6.67138C5.76715 7.18444 5.55509 7.81423 5.55871 8.46125C5.56084 8.98391 5.69737 9.49271 5.91071 9.96844C6.34697 10.9306 7.06484 11.9492 8.01311 12.8932C8.24137 13.1204 8.46431 13.3487 8.70431 13.561C9.88125 14.5972 11.2838 15.3445 12.8003 15.7434L13.4072 15.8362C13.6046 15.8468 13.8019 15.8319 14.0003 15.8223C14.311 15.8063 14.6143 15.7222 14.8888 15.5759C15.0285 15.504 15.1648 15.4257 15.2974 15.3412C15.2974 15.3412 15.3432 15.3114 15.4307 15.2452C15.5747 15.1386 15.6632 15.0628 15.7827 14.938C15.8712 14.8463 15.948 14.7386 16.0067 14.6159C16.0899 14.442 16.1731 14.1103 16.2072 13.834C16.2328 13.6228 16.2254 13.5076 16.2222 13.4362C16.2179 13.322 16.123 13.2036 16.0195 13.1535L15.3987 12.8751C15.3987 12.8751 14.4707 12.4708 13.9043 12.2127C13.8446 12.1867 13.7806 12.1719 13.7155 12.169C13.6425 12.1615 13.5688 12.1697 13.4992 12.1931C13.4297 12.2164 13.366 12.2544 13.3123 12.3044V12.3023C13.307 12.3023 13.2355 12.3631 12.4643 13.2975C12.42 13.357 12.3591 13.4019 12.2892 13.4266C12.2193 13.4513 12.1436 13.4547 12.0718 13.4362C12.0023 13.4176 11.9342 13.3941 11.868 13.3658C11.7358 13.3103 11.6899 13.289 11.5992 13.2495L11.5939 13.2474C10.9837 12.9809 10.4187 12.6211 9.91924 12.1807C9.78484 12.0634 9.66004 11.9354 9.53204 11.8116C9.11239 11.4098 8.74667 10.9551 8.44404 10.4591L8.38111 10.3578C8.3359 10.2897 8.29936 10.2162 8.27231 10.1391C8.23177 9.98231 8.33737 9.85645 8.33737 9.85645C8.33737 9.85645 8.59657 9.57271 8.71711 9.41911C8.81747 9.29146 8.91111 9.15865 8.99764 9.02125C9.12351 8.81858 9.16297 8.61058 9.09684 8.44951C8.79817 7.71991 8.48884 6.99351 8.17097 6.27245C8.10804 6.12951 7.92137 6.02711 7.75177 6.00685C7.69417 6.00045 7.63657 5.99405 7.57897 5.98978C7.43573 5.98266 7.29218 5.98409 7.14911 5.99405V5.99511Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <form action="#" class="form footer-form">
+                        <div class="footer__block">
+                            <input type="email" placeholder="EMAIL" required>
+                            <button type="submit"><img src="../assets/images/icons/arrow.svg" alt="#"></button>
+                        </div>
+                        <div class="form__checkbox">
+                            <input type="checkbox" id="f-agree" required>
+                            <label for="f-agree">Оставляя свой E-mail, я принимаю политику конфедициальности</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
